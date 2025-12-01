@@ -1,0 +1,59 @@
+/* TEMA GLOBAL DO SISTEMA*/
+
+/* Variáveis padrão utilizadas em todos os componentes */
+:root {
+  --primary: #1e3a8a;        /* azul principal */
+  --primary-light: #3b82f6;  /* azul claro */
+  --primary-dark: #1e40af;   /* azul escuro */
+
+  --bg: #f5f7fa;             /* fundo padrão */
+  --bg-dark: #e5e7eb;        /* cinza claro */
+  --text: #111827;           /* texto principal */
+  --text-light: #4b5563;     /* texto secundário */
+
+  --danger: #dc2626;         /* vermelho */
+  --success: #16a34a;        /* verde */
+  --warning: #f59e0b;        /* amarelo */
+
+  --shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  --radius: 8px;
+}
+
+/* Estilos gerais de página */
+body {
+  margin-top: 70px; /* espaço para o menu fixo */
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Títulos globais */
+h1, h2, h3 {
+  color: var(--primary-dark);
+}
+
+/* Estilo padrão para links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Container padrão utilizado por várias páginas */
+.page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cabeçalho padrão de página (título + botão de ação) */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* mantém alinhado à esquerda */
+  gap: 15px;
+  margin-bottom: 25px;
+}

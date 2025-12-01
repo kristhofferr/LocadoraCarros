@@ -1,0 +1,30 @@
+/*Card da localização*/
+.card-box {
+  background: white;
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+
+  margin: 0 auto;     /*  Centraliza o card */
+
+  display: flex;      /* Para organizar internamente */
+  flex-direction: column;
+  align-items: center; /*Centraliza titulo e mapa */
+}
+
+
+/* Área onde o mapa será exibido */
+.map-box {
+  margin-top: 20px;
+  height: 300px;                  /* Tamanho fixo do mapa */
+  border-radius: var(--radius);
+  overflow: hidden;               /* Impede que o mapa estoure as bordas */
+  box-shadow: var(--shadow);
+}
+
+/* Aviso quando o veículo não tem localização */
+.warning {
+  color: var(--danger);           /* Vermelho padrão */
+  font-weight: bold;
+}

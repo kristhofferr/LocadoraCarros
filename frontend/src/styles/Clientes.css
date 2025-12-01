@@ -1,0 +1,37 @@
+/* ESTILOS EXCLUSIVOS PARA A LISTA DE CLIENTES*/
+
+/* Container principal da página */
+.clientes-container {
+  margin-top: 120px;
+  width: 90%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Exibição de mensagens de erro */
+.erro {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Célula da tabela que contém os botões de ações */
+td.col-acoes {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  gap: 15px 60px;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+/* Estilo dos botões dentro da tabela */
+.col-acoes button {
+  width: 160px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}

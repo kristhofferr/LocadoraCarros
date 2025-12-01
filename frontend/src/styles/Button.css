@@ -1,0 +1,34 @@
+/* BOTÕES DE CORES PADRÃO (utilizam variáveis globais)*/
+
+/* Botão azul */
+.btn-blue {
+  background: var(--primary);
+}
+.btn-blue:hover {
+  background: var(--primary-dark);
+}
+
+/* Botão vermelho */
+.btn-red {
+  background: var(--danger);
+}
+.btn-red:hover {
+  background: #b91c1c;
+}
+
+/* Botão verde */
+.btn-green {
+  background: var(--success);
+}
+.btn-green:hover {
+  background: #15803d;
+}
+
+/* Botão laranja */
+.btn-orange {
+  background: var(--warning);
+  color: #222; /* melhora contraste */
+}
+.btn-orange:hover {
+  background: #d97706;
+}

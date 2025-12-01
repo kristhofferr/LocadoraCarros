@@ -1,0 +1,67 @@
+/* TABELA PADRÃO DO SISTEMA
+   Estilos aplicados em todas as listagens de dados*/
+
+/* Contêiner que permite rolagem horizontal em telas pequenas */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Tabela principal */
+.table-default {
+  width: 100%;                /* ocupa toda a largura disponível */
+  border-collapse: collapse;  /* remove espaços entre as bordas */
+  margin-top: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-width: 900px;           /* evita quebra em telas muito pequenas */
+}
+
+/* CABEÇALHO DA TABELA*/
+
+.table-default thead tr {
+  background: #1e40af;        /* azul escuro */
+  color: white;
+  text-align: left;
+}
+
+/* Células (header e corpo) */
+.table-default th,
+.table-default td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* LINHAS DO CORPO */
+
+/* Cor alternada entre as linhas */
+.table-default tbody tr:nth-child(even) {
+  background: #f9fbff;        /* azul muito claro */
+}
+
+/* Efeito hover */
+.table-default tbody tr:hover {
+  background: #eef3ff;
+}
+
+/* Linha separadora mais marcada */
+.table-default tbody tr {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* COLUNA DE AÇÕES COM BOTÕES */
+
+.table-default td.acoes {
+  display: flex;              /* coloca os botões lado a lado */
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;                  /* espaçamento entre botões */
+}
+
+/* Botões dentro da coluna de ações */
+.table-default td.acoes button {
+  width: auto;                /* evita esticar o botão */
+  flex-shrink: 0;             /* impede o botão de reduzir de tamanho */
+}

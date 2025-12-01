@@ -1,0 +1,10 @@
+/* Container geral do  app */
+/* Usado para páginas simples que não utilizam o .page-container */
+.container {
+  padding: 20px;
+}
+
+/* Espaçamento padrão para títulos */
+h1 {
+  margin-bottom: 20px;
+}
